@@ -1,36 +1,49 @@
 <!DOCTYPE html>
+
 <head>
     <title>FIRST PAGE</title>
     <style>
-        .card{
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            margin:auto;
-            width: 25%;
-            margin-left:40px;
-            border: 1px solid #f9f9f9;
-            border-radius: 3%;
+        nav {
+            display: flex;
+            background-color: lavender;
         }
-        
-        img {
-         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        a{
+            margin:20px;
+            color:black;
         }
-        h4{
-            margin:10px 30px 0px 0px ;
+
+        .left {
+            < !-- float: left;
+            -->margin: 10px 0px 0px 60px;
+            font-size: 30px;
         }
-        p{
-           margin: 10px 30px 0px 0px; 
+
+        .right {
+            < !-- float: right;
+            -->margin: 10px;
+            margin-left: auto;
         }
-        button{
-            background-color:blue;
-            padding:30px;
-            margin:auto;
-            height:40px;
-            witdh:60%;
-            border-radius: 8%;
-            margin:20px 237px 30px 90px;
+
+        input {
+
+            width: 150px;
+            height: 40px;
+            background-color: white;
+            border-radius: 7px;
+        }
+
+        .btn {
+            width: 75px;
+            height: 40px;
+            border-radius: 7px;
+            background-color: white;
+            border-color: green;
+            color: green;
+            margin: 0px 20px 0px 0px;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 
@@ -42,24 +55,28 @@
 
 
 </head>
+
 <body>
-  
-        <div class="card">
-            <img src="https://cn.i.cdn.ti-platform.com/content/1155/showpage/regular-show/ae/regularshow-200x200.png">
-            <div class="container">
-              <h4><b>Card title</b></h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Enim qui hic dolorum at reprehenderit! Id veritatis veniam nulla.
-                   Voluptates eaque nemo hic doloribus inventore explicabo voluptatum. 
-                   Aliquid minus earum dolor.</p>
-              <button type="button">Click Me!</button>
-            </div>
-          </div>
+    <nav>
+        <div class="left">
+            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">NAVBAR</a>
+            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">Home</a>
+            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">Link</a>
+            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">Dropdown</a>
+            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">Disabled</a>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Search..">
+            <button class="btn">search</button>
+        </div>
+
+
+    </nav>
 
 
 
 
-    
+
 </body>
 
 
