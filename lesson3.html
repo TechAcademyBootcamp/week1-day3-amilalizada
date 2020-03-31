@@ -1,89 +1,143 @@
 <!DOCTYPE html>
-
 <head>
-    <title>FIRST PAGE</title>
+    
+    <title>FORM</title>
     <style>
-        nav {
-            display: flex;
-            background-color: lavender;
-        }
-        a{
-            margin:20px;
-            color:black;
-        }
-
-        .left {
-            < !-- float: left;
-            -->margin: 10px 0px 0px 60px;
-            font-size: 30px;
-        }
-
-        .right {
-            < !-- float: right;
-            -->margin: 10px;
-            margin-left: auto;
-        }
-
-        input {
-
-            width: 150px;
-            height: 40px;
-            background-color: white;
-            border-radius: 7px;
-        }
-
-        .btn {
-            width: 75px;
-            height: 40px;
-            border-radius: 7px;
-            background-color: white;
-            border-color: green;
-            color: green;
-            margin: 0px 20px 0px 0px;
-        }
-
-        a {
-            text-decoration: none;
-        }
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+label{
+    display: block;
+}
+.row{
+    width: 100%;
+    display: flex;
+}
+.em{
+    width: 50%;
+    height: 25px;
+    margin: 25px 0px 0px 25px;
+    padding: 0px 10px 0px 0px;
+    border-radius: 7px;
+}
+.ps{
+    width: 47.5%;
+    height: 25px;
+    margin: 25px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 7px;
+}
+.add{
+    width: 100%;
+    height:25px;
+    margin:25px;
+    clear: both;
+    border-radius: 7px;
+}
+.add2{
+    width: 100%;
+    height:25px;
+    margin:25px;
+    clear: both;
+    border-radius: 7px;
+}
+.city{
+    margin:25px 0px 0px 25px;
+    padding: 0px 10px 0px 0px;
+    width: 50%;
+    height: 25px;
+    float: left;
+    border-radius: 7px;
+}
+.language{
+    margin:30px 0px 0px 0px;
+    padding: 0px 20px 0px 0px;
+    width: 30%;
+    float: left;
+    border-radius: 7px;
+}
+select{
+    width: 100%;
+}
+.zip{
+    margin:24px 0px 0px 427px;
+    width: 20%;
+    height: 47.5%;
+    float: left;
+    border-radius: 7px;
+}
+input{
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    border-radius: 5px;
+}
+#name{
+    width: 0%;
+}
+.che{
+    display: inline;
+    margin:50px 0px 0px 20px;
+}
+button{
+    margin:15px 0px 0px 20px;
+    color: white;
+    background-color: rgb(70, 70, 190);
+    border-radius: 12px;
+    width: 80px;
+    height: 40px;
+}
     </style>
-
-
-
-
-
-
-
-
 </head>
-
 <body>
-    <nav>
-        <div class="left">
-            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">NAVBAR</a>
-            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">Home</a>
-            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">Link</a>
-            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">Dropdown</a>
-            <a href="https://app.slack.com/client/T010WEF3T0Q/C010W3QTB6Y">Disabled</a>
+    <form>
+        <div class="row">
+            <div class="em">
+                <label id="email">Email</label>
+                <input type="email">
+            </div>
+            <div class="ps">
+                <label id="pass">Password</label>
+                <input type="password">
+            </div>
         </div>
-        <div class="right">
-            <input type="text" placeholder="Search..">
-            <button class="btn">search</button>
+        <div class="row">
+            <div class="add">
+                <label id="add">Address</label>
+                <input type="text" placeholder="1234 Main St">
+            </div>
         </div>
-
-
-    </nav>
-
-
-
-
-
+        <div class="row">
+                <div class="add2">
+                <label id="add2">Address 2</label>
+                <input type="text" placeholder="Apartment, studio, or floor">
+            </div>
+        </div>
+        <div class="row">
+            <div class="city">
+                <label id="ct">City</label>
+                <input type="text">
+            </div>
+            <div class="Language">
+                <label id="st">Language</label>
+                <select>
+                    <option value="">Choose...</option>
+                    <option value="">html</option>
+                    <option value="">css</option>
+                </select>
+            </div>
+            <div class="zip">
+                <label id="zp">Zip</label>
+                <input type="text">
+            </div>
+        </div>
+        <form>
+            <input id="name" type="checkbox">
+            <label class="che"><b>Check me out</b></label>
+        </form>
+        </div>
+        <button type="button">Sign in</button>
+    </form>
 </body>
-
-
-
-
-
-
-
-
 </html>
